@@ -13,8 +13,71 @@
 </head>
 <body id="kss-node">
 <header class="st-header" role="banner">
+<div class="st-header__content">
+<div class="st-header__inner">
+<p class="st-header__logo">
+<a href="#"><img class="st-header__logo__img" src="../assets/img/structurres/logo.svg" alt="TK Group"></a>
+</p>
+<button id="js-header-navBtn" class="st-header__navBtn" aria-level="NAV" alt="TK Group"></a>
+<span class="st-header__navBtn__icon js-header-navBtn__icon"></span>
+</button>
+<nav id="js-header-nav" class="st-header__nav" role="navigatoin">
+<ul class="st-header__globalNav">
+<li><a class="st-header__globalNav__link" href="#">SERVICE</a></li>
+<li><a class="st-header__globalNav__link" href>WORKS</a></li>
+<li><a class="st-header__globalNav__link" href>NEWS</a></li>
+<li><a class="st-header__globalNav__link" href>COMPANY</a></li>
+<li><a class="st-header__globalNav__link" href>TK LAB.</a></li>
+<li><a class="st-header__globalNav__link" href>RECRUIT</a></li>
+</ul>
+<ul class-"st-header__infoNav">
+<li><a class="st-header__globalNav__link" href>ENGLISH</a></li>
+<li><a class="st-header__globalNav__link" href>CONTACT</a></li>
+<li>
+<div id="js-header-search">
+<from id="js-builder-search__form" class="st-header__search__form" role="search">
+<input class="st-header__search__input" type="text">
+<button class="st-header__search__button" type="submit"></button>
+</form>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div class="kss-sidebar kss-style">
+<header class="kss-header">
+<h1 class="kss-doc-title">{{options.title}}</h1>
+</header>
+<nav class="kss-nav">
+<ul class="kss-nav__menu">
+<li class="kss-nav__menu-link" href="./">
+<span class="kss-nav-ref">0</span>
+<span class="kss-nav__name">Overview</span>
+</a>
+</li>
+{{#each menu}}
+<li class="kss-nav__menu-item">
+<a class="kss-nav__menu-link" href="section-{{referenceURI}}.html">
+<span class="kss-nav__ref">{{referenceNumber}}</span><span class="kss-nav__name">{{header}}</span>
+</a>
+{{#if isActive}}
+{{#if children}}
+<ul class="kss-nav__menu-child">
+{{#each children}}
 
- 	  		
+
+
+
+
+
+
+
+
+
+
+
 <footer class="kss-github">
 <a href="https://github.com/kss-node/kss-node"><img src="kss-assets/github-fork--black.png" alt="Fork me on Github"></a>
 </footer>
